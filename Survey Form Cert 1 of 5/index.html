@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <!-- Page Title -->
+    <h1 id="title">Survey Form for all you newbies</h1>
+
+    <!-- Description -->
+    <p id="description">Please fill out this survey form to help us understand your preferences and why you did what you did.</p>
+
+    <!-- Form Element -->
+    <form id="survey-form">
+
+      <!-- Name Field -->
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <!-- Email Field -->
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <!-- Number Field -->
+      <label id="number-label" for="number">Age:</label>
+      <input type="number" id="number" name="age" min="10" max="100" placeholder="Enter your age" required>
+
+      <!-- Dropdown Field -->
+      <label for="dropdown">Which option best describes you?</label>
+      <select id="dropdown" name="role" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="student">Student</option>
+        <option value="professional">Professional</option>
+      </select>
+
+      <!-- Radio Buttons -->
+      <p>How did you hear about us?</p>
+      <label>
+        <input type="radio" name="referral" value="friends" required>
+        Friends
+      </label>
+      <label>
+        <input type="radio" name="referral" value="online" required>
+        Online
+      </label>
+
+      <!-- Checkboxes -->
+      <p>Select your preferences:</p>
+      <label>
+        <input type="checkbox" name="preference" value="newsletters">
+        Newsletters
+      </label>
+      <label>
+        <input type="checkbox" name="preference" value="updates">
+        Updates
+      </label>
+
+      <!-- Textarea for Additional Comments -->
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" placeholder="Enter any additional comments"></textarea>
+
+      <!-- Submit Button -->
+      <button type="submit" id="submit">Submit</button>
+
+    </form>
+  </main>
+</body>
+</html>
